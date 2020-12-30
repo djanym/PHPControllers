@@ -1,6 +1,6 @@
 <?php
 
-//namespace djanym\PHPHelpers;
+namespace Djanym\PHPControllers;
 
 class BaseController
 {

@@ -1,6 +1,6 @@
 {
     "name": "djanym/phphelpers",
-    "description": "A set of common functions used in most projects",
+    "description": "Simple reusable PHP controllers",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PHPHelpers\\": "packages/"
+            "Djanym\\PHPControllers\\": "packages/"
         }
     }
 }
