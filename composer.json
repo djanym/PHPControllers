@@ -1,5 +1,5 @@
 {
-    "name": "djanym/phphelpers",
+    "name": "djanym/phpcontrollers",
     "description": "Simple reusable PHP controllers",
     "type": "library",
     "license": "MIT",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Djanym\\PHPControllers\\": "packages/"
+            "Ricubai\\PHPControllers\\": "packages/"
         }
     }
 }
