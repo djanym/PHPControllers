@@ -4,7 +4,9 @@ namespace Ricubai\PHPControllers;
 
 class BaseController
 {
-	public static function test(){
-		echo 'Base Controller working';
-	}
+    public static function display($tpl, $vars = []): void
+    {
+        extract($vars, EXTR_SKIP);
+        require $tpl;
+    }
 }
