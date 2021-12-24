@@ -4,6 +4,7 @@ namespace Ricubai\PHPControllers;
 
 use eftec\bladeone\BladeOne;
 use Ricubai\PHPHelpers\BladeExt;
+use Ricubai\PHPHelpers\TemplateHelper;
 
 class BaseController
 {
@@ -16,9 +17,8 @@ class BaseController
     {
         $views = TPLPATH;
         $cache = TPLPATH . '/cache';
-//        $blade = new BladeOne($views, $cache, BladeOne::MODE_DEBUG); // MODE_DEBUG allows to pinpoint troubles.
         $blade = new BladeExt($views, $cache, BladeOne::MODE_DEBUG); // MODE_DEBUG allows to pinpoint troubles.
         $blade->pipeEnable = true;
-        echo $blade->run($tpl, $vars); // it calls /views/hello.blade.php
+        echo $blade->run($tpl, $vars);
     }
 }
