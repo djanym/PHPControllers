@@ -19,6 +19,10 @@ class BaseController
         $cache = TPLPATH . '/cache';
         $blade = new BladeExt($views, $cache, BladeOne::MODE_DEBUG); // MODE_DEBUG allows to pinpoint troubles.
         $blade->pipeEnable = true;
+        if (defined('SITE_URL')) {
+            $blade->setBaseUrl(SITE_URL);
+        }
+//        $blade->setIsCompiled(false);
         echo $blade->run($tpl, $vars);
     }
 }
